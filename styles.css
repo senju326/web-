@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    max-width: 1000px;
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+    margin: 170px 0;
+}
+
+#read-more-link {
+    border: solid 2px black;
+    padding: 20px 30px;
+    border-radius: 100px;
+    display: inline-block;
+}
+
+#description {
+    width: 400px;
+    font-size: larger;
+    float: right;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul {
+    display: inline-block;
+    float: right;
+    margin: 0;
+}
+
+nav {
+    padding: 25px 0;
+}
+
+#main-link {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#sun-img {
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    height: 400px;
+}
+
+#rain-img {
+    position: absolute;
+    left: 400px;
+    top: 70px;
+    height: 200px;
+}
+
+#texture {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+
+    width: 100%;
+
+    object-fit: cover;
+    mix-blend-mode: overlay;
+}
+
+h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 80px;
+}
+
+#about-me p {
+    font-size: 25px;
+    width: 400px;
+    float: right;
+    margin: 60px 0;
+}
+
+#about-me img {
+    height: 500px;
+}
+
+#about-me {
+    padding: 100px 0;
+}
+
+.background {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#main .background {
+    top: 0;
+    background: linear-gradient(#FC63FF, #97E5FE);
+    height: 770px;
+}
+
+#about-me .background {
+    top: 770px;
+    background-color: #97E5FE;
+    height: 1080px;
+}
+
+#skills .background {
+    top: 1650px;
+    background: linear-gradient(#52378D, #8E006F);
+    height: 800px;
+}
+
+#skills {
+    color: white;
+    padding: 120px 0;
+}
+
+#skills h2 {
+    text-align: right;
+}
+
+#skills figure {
+    display: inline-block;
+    width: 300px;
+    margin: 0;
+    margin-right: 30px;
+}
+
+#skills figure img {
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+#skills figure figcaption {
+    font-size: 20px;
+}
+
+#project .background {
+    top: 2450px;
+    background-color: #97E5FE;
+    height: 800px;
+}
+
+#project p {
+    width: 50%;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+#project .gallery {
+    float: right;
+    width: 50%;
+}
+
+#project .gallery img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#project {
+    padding: 50px 0;
+}
+
+#how {
+    color: white;
+    padding: 100px 0;
+}
+
+#how .background {
+    top: 3250px;
+    background: linear-gradient(#52378D, #8E006F);
+    height: 950px;
+}
+
+#how img {
+    position: absolute;
+
+    padding-top: 230px;
+    padding-left: 90px;
+    width: 810px;
+}
+
+#how h2 {
+    text-align: center;
+}
+
+#how ol {
+    font-size: larger;
+	list-style-type: none; 
+	counter-reset: num;
+}
+
+#how ol li {
+	position: relative;	
+	margin: 0;
+	padding: 0 0 10px 70px;
+}
+
+#how ol li:nth-child(even) {
+    right: -50%;
+}
+
+#how ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+    
+	border: 15px solid white;
+	border-radius: 50%;
+
+	position: absolute;
+	width: 60px;
+	height: 60px;
+
+	left: -38px;
+    
+	font-size: 65px;
+    font-weight: bold;
+
+	text-align: center;
+	line-height: 60px;
+    
+    opacity: 0.5;
+}
+
+#plans h2 {
+    text-align: right;
+}
+
+#plans img {
+    position: absolute;
+    z-index: -1;
+    width: 700px;
+}
+
+#plans .background {
+    top: 4150px;
+    background: #F97800;
+    height: 650px;
+}
+
+#plans table {
+    font-size: large;
+    float: right;
+}
+
+#plans table td {
+    vertical-align: top;
+    padding: 0 0 30px 60px;
+}
+
+#thanks {
+    clear: both;
+    padding: 100px 0;
+    color: white;
+}
+
+#thanks .background {
+    top: 4800px;
+    background: black;
+    height: 550px;
+}
+
+#thanks h2 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#thanks p {
+    width: 50%;
+}
+
+#thanks a {
+    font-size: 30px;
+    font-weight: 900;
+    float: right;
+}
